@@ -1,7 +1,6 @@
 # siteproxy
 反向代理, 免翻墙访问youtube/twitter/google, 支持telegram web登录.
 pure web page proxy to google/youtube, zero configuration from client side. Reverse proxy to all internet. 一键部署，翻墙利器。
-
 ```
                                                  +----> google/youtube
                              +----------------+  |
@@ -12,6 +11,7 @@ user browser +-------------->+ siteproxy      +-------> wikipedia
                                                  +----> chinese forums
 ```
 请勿将本项目用于非法用途，否则后果自负。
+本项目基于 https://github.com/netptop/siteproxy 二次修改
 
 ## 目录
 
@@ -26,7 +26,6 @@ user browser +-------------->+ siteproxy      +-------> wikipedia
 - [now_deployment](#now_deployment)
 - [heroku_deployment](#heroku_deployment)
 - [vps_deployment](#vps_deployment)
-- [联系方式](#联系方式)
 
 ### 特点
 - 代码量只有jsproxy的四分之一左右
@@ -176,7 +175,3 @@ Note: massive usage might lead to account being blocked
 7. forever start -c 'node --tls-min-v1.0' index.js
 8. done, now you can access your domain name from browser.
 ```
-### 联系方式
-Telegram群: @siteproxy
-<br />
-email: netptop@gmail.com
