@@ -7,7 +7,7 @@ const {CookieAccessInfo, CookieJar, Cookie} = cookiejar
 
 let config = {
     httpprefix: 'https', port: 443,
-    serverName: 'siteproxy.netptop.workers.dev',
+    serverName: 'wannacry.cf',
 }
 let blockedSites = ['www.chase.com'] // accessing to chase.com was reported by google
 
@@ -53,6 +53,7 @@ const locationReplaceMap302 = ({location, serverName, httpprefix, host, httpType
     if (!location) {
         return '/'
     }
+    //URL替换原则
     if (location.startsWith('https://')) {
         myRe = new RegExp('https://([-a-z0-9A-Z.]+)', 'g')
         location = location.replace(myRe, `${httpprefix}://${serverName}:${port}/https/$1`)
